@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruwudu:wght@400;600;700&display=swap');
+
+
+
+.movie-information {
+    margin-top: 70px;
+    margin-left: 0;
+}
+
+.movie-details {
+    display: grid;
+    grid-template-columns: repeat(2,600px);
+    place-items: center;
+    align-items: center;
+    margin-left: 150px;
+    font-family: 'Ruwudu', serif;
+    color: white;
+}
+
+.movie-valuables {
+    margin-top: 0;
+}
+
+.title {
+    margin-bottom: 20px;    
+    margin-top: 70px;
+    text-align: left;
+    color: white;
+}
+
+.movie-time-info {
+    display: flex;
+}
+
+.movie-time-info h5 {
+    margin-right: 25px;
+}
+
+.genre {
+    display: flex;
+}
+
+.genre div {
+    padding: 8px 16px;
+    margin-right: 10px;
+    background-color: #0074D9; /* Background color */
+    color: #fff; /* Text color */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Shadow */
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.genre div:hover {
+    animation: bounceTilt 0.4s ease-in-out infinite; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes bounceTilt {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(5deg); /* Tilt to the right */
+    }
+    75% {
+      transform: rotate(-5deg); /* Tilt to the left */
+    }
+}
+
+.plot {
+    margin-top: 10px;
+    color: white;
+    font-size: 20px;
+}
+  
+.staff {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+  
+.staff li {
+    list-style-type: none;
+}
+
+
+.rating {
+    margin-top: 10px;
+    font-size: 35px;
+    color: orange;
+}
+
+.rating-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: transform 1s ease, background-color 0.3s ease;
+}
+
+.confirm-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: orange;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.rating-btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.confirm-btn:hover {
+    background-color: orangered;
+}
+
+
+.popup {    
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.popup-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.popup-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.popup-body {
+    padding: 2px 16px;
+}
+
+.popup-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.star-wrapper {
+    color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.star-wrapper span {
+    padding: 4px 20px;
+}
+
+.star-wrapper span:hover {
+    color: gold;
+    transform: scale(1.5);
+}
+
+.fa-star {
+
+    transition: color 0.3s, transform 0.7s;
+}
+
+
+.s1:hover ~ span {
+    color: gold;
+}
+.s2:hover ~ span {
+    color: gold;
+}
+.s3:hover ~ span {
+    color: gold;
+}
+.s4:hover ~ span {
+    color: gold;
+}
+.s5:hover ~ span {
+    color: gold;
+}
+
+.s6:hover ~ span {
+    color: gold;
+}
+
+.s7:hover ~ span {
+    color: gold;
+}
+
+.s8:hover ~ span {
+    color: gold;
+}
+
+.s9:hover ~ span {
+    color: gold;
+}
+
+.s10:hover ~ span {
+    color: gold;
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.wraper {
+    position: absolute;
+    bottom: 30px;
+    right: 50px;
+}
+
+.checked,
+.checked ~ span{
+    color: gold;
+}
+
+.checked {
+    transform: scale(2);
+}
+
+.rating-number {
+    display: flex;
+    justify-content: center;
+    color: #3498db;
+}
+
+.success-popup {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4CAF50; /* Green for success */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    animation: popupAnimation 3s ease-in-out;
+}
+
+@keyframes popupAnimation {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    20% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    70% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+  }
