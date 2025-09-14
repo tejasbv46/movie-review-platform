@@ -11,7 +11,7 @@
 ## 📸 Screenshots
 
 **Home Page**
-![screenshot1](https://github.com/Nab32/MovieTake/assets/90017423/18eb4963-a248-4a9c-ac05-8a1578dcc293)
+![screenshot1](https://github.com/tejasbv46/movie-review-platform/blob/main/Screenshot%202025-09-14%20155505.png)
 
 **Movie Details Page**
 ![screenshot2](https://github.com/Nab32/MovieTake/assets/90017423/69bca924-eb95-4449-a31d-8de5280b21b7)
