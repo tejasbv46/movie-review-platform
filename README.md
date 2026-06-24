@@ -6,7 +6,7 @@
 
 **MovieTake** is a MERN stack movie rating website allowing users to explore, rate, and review movies.
   
----   
+---    
 
 ## 📸 Screenshots
 
