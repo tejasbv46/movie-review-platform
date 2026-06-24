@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/github/license/your-username/MovieTake)](https://github.com/your-username/MovieTake/blob/main/LICENSE)
 
 **MovieTake** is a MERN stack movie rating website allowing users to explore, rate, and review movies.
-
+ 
 ---
 
 ## 📸 Screenshots
